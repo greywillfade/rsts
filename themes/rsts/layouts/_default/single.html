@@ -1,0 +1,67 @@
+{{ partial "base" . }}
+{{ partial "thirdparty/ga" . }}
+{{ partial "nav" . }}
+
+<div class="topbar-unfix">
+
+    <section style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('{{ .Params.headerimg }}') #6BBCB6 no-repeat center; background-size: cover;">
+        <div class="large-article-header" >
+            <div class="large-article-header-content">
+                <div class="row" style="justify-content: center;">
+                    <div class="column small-12">
+                        <div class="article-date">
+                            <p>Published on {{ .Date.Format "Monday, 2 Jan, 2006" }}</p>
+                        </div>
+                        <div class="article-title">
+                            <h1>{{ .Title }}</h1>
+                        </div>
+                        <div class="article-details">
+                            <div class="article-author">
+                                <img src="/img/people/sally.jpg" alt="Sally Lait" />
+                                Sally Lait
+                            </div>
+                            <!-- TODO: Keep in case want to use it for PWA stuff-->
+                            <!--<div class="article-comments">
+                                <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 3 Comments</a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+    <div class="row align-center breathe-t breathe-b">
+    <div class="column small-12 medium-9">
+        {{ .Content }}
+    </div>
+    </div>
+    </section>
+
+    <div class="bg-slope-top bg-main-alt"></div>
+    <section class="bg-main-alt breathe-t">
+        <div class="row align-center">
+
+            <div class="column small-12 medium-6">
+                <h4>Read more from the blog</h4>
+                {{ if .PrevInSection }}
+                    <p>Back in time:<br />
+                    <a href="{{.PrevInSection.Permalink}}">{{.PrevInSection.Title}}</a></p>
+                {{ end }}
+                {{ if .NextInSection }}
+                    <p>Forward in time:<br />
+                    <a href="{{.NextInSection.Permalink}}">{{.NextInSection.Title}}</a></p>
+                {{ end }}
+
+            </div>
+            <div class="column small-12 medium-6">
+                <h4>Posted by Sally Lait</h4>
+                <p>
+                    Sally is the lead consultant and founder of Records Sound the Same, helping people with digital transformation. She's also a speaker, coder, gamer, author, and jasmine tea fiend.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    {{ partial "footer" . }}

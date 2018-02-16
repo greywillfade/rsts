@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How we can help on Records Sound the Same</title>
+    <link>http://recordssoundthesame.com/services/</link>
+    <description>Recent content in How we can help on Records Sound the Same</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <managingEditor>hello@recordssoundthesame.com (Records Sound the Same)</managingEditor>
+    <webMaster>hello@recordssoundthesame.com (Records Sound the Same)</webMaster>
+    <copyright>All content is copyright Records Sound the Same Ltd</copyright>
+    
+	<atom:link href="http://recordssoundthesame.com/services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workshop: An introduction to digital transformation</title>
+      <link>http://recordssoundthesame.com/services/workshops/intro-to-digital-transformation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>hello@recordssoundthesame.com (Records Sound the Same)</author>
+      <guid>http://recordssoundthesame.com/services/workshops/intro-to-digital-transformation/</guid>
+      <description>This one-day training workshop has been designed to give organisations a practical introduction to exercises which can help kick-start digital transformation projects, and make change happen.
+Change takes many forms. Perhaps you’re looking to change your ways of working to better support customers, or to build internal capabilities, tools, and skills. You may be thinking about modernising older systems and processes, setting your digital strategy, or trying to work out the structure and roles your teams need… but feel you need a little bit of a helping hand to know that you’re thinking about the right things.</description>
+    </item>
+    
+  </channel>
+</rss>

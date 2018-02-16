@@ -1,0 +1,13 @@
+baseURL = "http://recordssoundthesame.com/"
+languageCode = "en-gb"
+title = "Records Sound the Same"
+theme = "rsts"
+publishDir = "DEPLOY"
+paginate = 12
+copyright = "All content is copyright Records Sound the Same Ltd"
+
+[author]
+    name = "Records Sound the Same"
+    email = "hello@recordssoundthesame.com"
+
+[taxonomies]

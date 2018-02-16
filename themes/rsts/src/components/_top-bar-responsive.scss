@@ -1,0 +1,240 @@
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.topbar-responsive-links {
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
+    -webkit-animation: fadeIn 0.4s ease-in;
+            animation: fadeIn 0.4s ease-in;
+}
+
+.no-js .topbar-responsive {
+  display: none;
+}
+
+.topbar-responsive .top-bar-title {
+    position: relative;
+    width: 100%;
+}
+
+.topbar-responsive .top-bar-title span {
+    position: absolute;
+    right: 0;
+    padding: 0.25rem 0.45rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.topbar-responsive .top-bar-title span .menu-icon {
+    margin-bottom: 4px;
+}
+
+.topbar-responsive {
+    padding: 0.75rem;
+    background: none;
+    background: $rsts-teal-mid;
+
+    @include breakpoint(large) {
+        padding: 0;
+    }
+}
+
+.topbar-responsive ul {
+    background: none;
+}
+
+.topbar-responsive .menu {
+    font-family: 'Karla';
+    font-weight: 600;
+    /*height: 100vh;IE fix */
+    margin-top: 5vh;
+
+    .vertical>li>a {
+        justify-content: center;
+    }
+
+    li {
+        font-size: 1.7em;
+
+        ul {
+            list-style-type: none;
+            font-size: 0.4em;
+            padding: 0.5em;
+            text-align: center;
+            background-color: transparent;
+
+            a {
+                color: $rsts-teal-dark;
+            }
+
+            a:hover {
+                color: #e36a58;
+            }
+
+            li {
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+            }
+
+            li:not(:last-child) {
+              border-bottom: 1px solid rgba(255,255,255,0.5);
+            }
+        }
+    }
+
+    li:last-of-type {
+        margin-right: 0;
+    }
+
+    a {
+        padding: 0.875rem 0;
+        color: #ffffff;
+        transition: color 0.15s ease-in;
+    }
+
+    a:hover {
+      color: $rsts-teal-light;
+    }
+
+    @include breakpoint(large) {
+
+        li {
+            font-size: 1.1em;
+            margin-right: 1.75em;
+
+            ul {
+                background: rgba(163,210,203,0.9)!important;
+                font-size: 0.8em;
+            }
+        }
+
+        height: auto;
+        margin-top: auto;
+    }
+}
+
+.topbar-fix {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width:100%;
+}
+
+.topbar-unfix {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    z-index: 1;
+    width:100%;
+
+    @include breakpoint(large) {
+        top: 136px;
+    }
+}
+
+.top-bar-impholder {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.topbar-responsive .topbar-responsive-logo {
+  color: #ffffff;
+  vertical-align: middle;
+
+  img {
+      max-height:90px;
+
+      @include breakpoint(large) {
+          margin-top:15px; margin-bottom:15px;
+      }
+  }
+}
+
+.topbar-responsive .menu .topbar-responsive-button {
+  color: #fff;
+  border-color: #fff;
+  border-radius: 1.7em;
+  transition: color 0.15s ease-in, border-color 0.15s ease-in;
+  font-family: 'Karla';
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0.875rem 0;
+}
+
+.topbar-responsive .menu .topbar-responsive-button:hover {
+  color: $rsts-teal-light;
+  border-color: $rsts-teal-light;
+}
+
+.topbar-responsive-links{
+    height: 100vh;
+    width: 100%;
+}
+
+@include breakpoint(large) {
+      .no-js .topbar-responsive {
+        display: block;
+      }
+
+      .no-js .top-bar-title {
+        display: none;
+      }
+
+      .topbar-responsive .top-bar-title {
+          width: auto;
+      }
+
+      .topbar-responsive-links{
+          height: auto;
+          width: auto;
+      }
+}
+
+/*@include breakpoint(medium down) {
+    .compat-menu {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}*/

@@ -1,0 +1,39 @@
+{{ partial "base" . }}
+{{ partial "thirdparty/ga" . }}
+{{ partial "nav" . }}
+
+<div id="waveholder" class="topbar-unfix">
+
+    <div class="intro-banner callout large">
+    <div class="row" style="justify-content: center;">
+        <div class="column small-12 large-9 large-centered">
+            <h1 style="color:#305A5C;">{{ .Title }}</h1>
+            <p style="font-size:1.7em;">Records Sounds the Same is an independent digital consultancy
+            based in East Anglia, working across the UK and internationally.</p>
+            <p style="font-size:1.2em;">We work with clients across different industries to help them better use digital technologies to achieve their goals, and meet the needs of their customers.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="bg-tm">
+        <canvas id="canvas" height="100px"></canvas>
+    </div>
+
+    <div class="row small-up-1 medium-up-3 large-up-4 breathe-t">
+        {{ range (.Paginate (where .Data.Pages "Section" "!=" "page")).Pages }}
+        <div class="column flex-container">
+            <div class="card card-full card-border-irregular {{ .Params.class}}">
+                <div class="card-section">
+                    <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                    <p>{{ .Date.Format "2 January 2006" }}</p>
+                </div>
+            </div>
+        </div>
+        {{- end }}
+    </div>
+
+    <div class="row column breathe-b">
+        {{ partial "pagination" . }}
+    </div>
+
+    {{ partial "footer" . }}

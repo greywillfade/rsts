@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Data migration strategy : Records Sound the Same</title>
+    <meta name="description" content="A very important part of many website builds, and one which is often overlooked, is the migration of existing data or the population of new content." />
+    <link rel="canonical" href="http://recordssoundthesame.com/blog/2012/08/19/data-migration-strategy/">
+    <meta name="author" content="Records Sound the Same" />
+    <meta name="robots" content="index,follow" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@RecordsSoundTS" />
+    <meta name="twitter:creator" content="@RecordsSoundTS" />
+    <meta property="og:url" content="http://recordssoundthesame.com/blog/2012/08/19/data-migration-strategy/" />
+    <meta property="og:title" content="Data migration strategy" />
+    <meta property="og:description" content="A very important part of many website builds, and one which is often overlooked, is the migration of existing data or the population of new content." />
+    <meta property="og:image" content="http://recordssoundthesame.com/img/content/blog/l/move.jpg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=r17.01">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=r17.01">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=r17.01">
+    <link rel="manifest" href="/manifest.json?v=r17.01">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=r17.01" color="#6bbcb6">
+    <link rel="shortcut icon" href="/favicon.ico?v=r17.01">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/blog/index.xml" rel="alternate feed" type="application/rss+xml" title="Records Sound the Same blog RSS" />
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="/css/master.css" />
+</head>
+<body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-2631465-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<section class="bg-tm">
+<div class="row column align-center top-bar-impholder">
+    <nav class="top-bar topbar-responsive topbar-fix">
+        <div class="top-bar-title">
+            <span data-responsive-toggle="topbar-responsive" data-hide-for="large">
+                <button class="menu-icon" type="button" data-toggle></button>
+            </span>
+            <a class="topbar-responsive-logo" href="/">
+                <img src="/img/logo/RSTSlogo.png" alt="Records Sound the Same logo" />
+            </a>
+        </div>
+        <div id="topbar-responsive" class="topbar-responsive-links" role="navigation">
+            <div class="top-bar-right">
+                <ul class="vertical large-horizontal menu" data-responsive-menu=" medium-dropdown">
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/services/">How we can help</a>
+                        
+                    </li>
+                    <li><a href="/work/">Past work</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li>
+                        <a href="/contact/"><button type="button" class="button hollow topbar-responsive-button">Contact</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+</section>
+
+
+<div class="topbar-unfix">
+
+    <section style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('/img/content/blog/l/move.jpg') #6BBCB6 no-repeat center; background-size: cover;">
+        <div class="large-article-header" >
+            <div class="large-article-header-content">
+                <div class="row" style="justify-content: center;">
+                    <div class="column small-12">
+                        <div class="article-date">
+                            <p>Published on Sunday, 19 Aug, 2012</p>
+                        </div>
+                        <div class="article-title">
+                            <h1>Data migration strategy</h1>
+                        </div>
+                        <div class="article-details">
+                            <div class="article-author">
+                                <img src="/img/people/sally.jpg" alt="Sally Lait" />
+                                Sally Lait
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+    <div class="row align-center breathe-t breathe-b">
+    <div class="column small-12 medium-9">
+        
+
+<p>A very important part of many website builds, and one which is often overlooked, is the migration of existing data or the population of new content.</p>
+
+<p>If all of your content is going to be created from scratch it&rsquo;s best to establish upfront how best to standardise the collection of the required data. Spreadsheets following predefined formats can be imported through automation relatively easily, or perhaps, depending on timescales, content can be written straight into a content management system.</p>
+
+<p>When dealing with the migration of existing content, a variety of scenarios may be encountered. In the web arena, these may commonly include moving from a legacy CMS system or blogging engine to a new one, but wanting to keep all existing content and image assets. Another common scenario may be a move from one email marketing service to another, where a database of contacts needs to be transferred along with any lists or reports that have been created.</p>
+
+<p>In order to establish the tasks that need to happen, the responsibilities around who these should be assigned to and the timescales involved, it&rsquo;s important to do some initial technical strategy around the existing system and the proposed new solution.</p>
+
+<h2 id="planning-the-migration">Planning the migration</h2>
+
+<p>Getting access to the existing data is the first step in planning any migration. This will allow analysis of the systems and versions of software currently used, how data is stored, the data structures involved, identification of the context of fields, and the relationships between data items. There may be a database to review, APIs, or migration may require investigation into a variety of data sources, potentially including offline sources. Once these elements are understood, logical mappings can be created between the old and the new.</p>
+
+<p>Establishing how often the data is updated, by whom and when can be used to help plan the timing of a migration. It is likely that downtime will need to be involved in order to put a freeze on the data in the old system, and this will need to be carefully timed around the switchover to the new system, as well as any tasks which may need to be performed by business users. If the system is critical for end users, offers a service, or downtime may result in lost revenue, migration activities need to be carefully managed. In order to establish how long a migration is likely to take data can be segmented, a small test can be run and timings extrapolated, or a full trial run can be performed. Timeouts, badly formatted data, duplication issues and other exceptions should all be considered.</p>
+
+<p>The migration itself may take certain forms. Certain systems may have export tools available to help select the data required and to output it in a format defined by the user, or the system to be imported into may have import tools of its own. It is important to establish what these tools can do - prebuilt systems will save you developing your own export/import tool and will likely take care of the most common requirements, however it is important to assess these against your individual requirements.</p>
+
+<p>If it is not possible to use an existing tool, the next approach should be consider how much of the process you are able to automate. Understanding the logical mappings established in the initial planning can help to match whether scripts can be created to cover the majority of tasks, or whether any of the migration may have to be done manually. This is not ideal, and depending on the volume of data this can be an incredibly time consuming, labour intensive task, but may be the best or only way to approach certain scenarios, particularly those which involve the migration of data currently not in a suitable format.</p>
+
+<p>The migration itself is one element, but the impact of changing data sources also needs to be considered. When discussed in the context of the web, any changes in the way that content is structured needs to have care taken to maintain SEO. A series of 301 redirects will likely be needed as a bare minimum. If this is something you&rsquo;re interested in please drop my colleague (and SEO/data wizard) <a href="http://www.darrenware.com/" target="_blank">Darren Ware</a> a line.</p>
+
+<p>Once the migration has been performed the system will need to run through a series of audits and tests in order to establish the success of the migration and the acceptance of the new solution. These can involve sense checks (based on the expected number of records, format of data etc), comparison between new data sets and the old, and human checks to ensure that data is not only logical but that it meets any requirements set out prior to the migration. It is advised that a backup of the old data is kept for a suitable length of time (based on current data retention policies) in case problems are found once the old system is decommissioned.</p>
+
+    </div>
+    </div>
+    </section>
+
+    <div class="bg-slope-top bg-main-alt"></div>
+    <section class="bg-main-alt breathe-t">
+        <div class="row align-center">
+
+            <div class="column small-12 medium-6">
+                <h4>Read more from the blog</h4>
+                
+                
+                    <p>Forward in time:<br />
+                    <a href="http://recordssoundthesame.com/blog/2013/03/31/responsive-web-dinosaurs/">Responsive web dinosaurs</a></p>
+                
+
+            </div>
+            <div class="column small-12 medium-6">
+                <h4>Posted by Sally Lait</h4>
+                <p>
+                    Sally is the lead consultant and founder of Records Sound the Same, helping people with digital transformation. She's also a speaker, coder, gamer, author, and jasmine tea fiend.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="marketing-site-footer">
+
+    
+        <div class="row medium-unstack breathe-t breathe-b">
+            <div class="small-12 columns">
+                
+                    <h4 class="marketing-site-footer-name">Want to be kept up to date?</h4>
+                    <p>If you're looking for more reading material, you can keep up to date with all of our blog posts using our <a href="/blog/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>.</p>
+                    <p>If anything you've read today has sparked your interest and you'd like to know more, or if there are particular subjects that you'd like to hear about, please <a href="/contact/">let us know</a>!</p>
+                
+            </div>
+        </div>
+    
+
+
+    
+    <div class="marketing-site-footer-bottom">
+        <div class="row column">
+            <p>Records Sound the Same Ltd is a company registered in England and Wales. Company No. 08942289. VAT No. 217992084.</p>
+            <p>hello@recordssoundthesame.com | <a href="https://twitter.com/RecordsSoundTS">@RecordsSoundTS</a> | <a href="/contact/">Contact us</a> | <a href="/contact/">Join the newsletter</a></p>
+            <hr />
+        </div>
+
+        <div class="row large-unstack align-middle">
+            <div class="column">
+                <p>&copy; Records Sound the Same Ltd 2018</p>
+            </div>
+            <div class="column">
+                <ul class="menu marketing-site-footer-bottom-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/services/">How we can help</a></li>
+                <li><a href="/work/">Past work</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script src="/js/index.js"></script>
+
+<script>
+  $(document).foundation();
+</script>
+
+</body>
+</html>
+

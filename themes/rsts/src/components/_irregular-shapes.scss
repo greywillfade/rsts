@@ -1,0 +1,229 @@
+.shape-grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 2em 1em;
+}
+
+@media screen and (min-width: 40em)
+{
+  .shape-grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 80em)
+{
+  .shape-grid-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+//Catch alls
+.shape-grid-item {
+    background-color: $rsts-orange-dark;
+    position: relative;
+    min-height:15em;
+    height: 100%;
+    margin:0.7em;
+    -webkit-clip-path: polygon(6% 0, 97% 3%, 98% 100%, 0 94%);
+    clip-path: polygon(6% 0, 97% 3%, 98% 100%, 0 94%);
+    width:100%;
+    border-radius: 20%;
+}
+
+.shape-grid-item-image {
+    -webkit-clip-path: polygon(3% 3%, 94% 1%, 98% 92%, 3% 91%);
+    clip-path: polygon(3% 3%, 94% 1%, 98% 92%, 3% 91%);
+    border-radius: 25%;
+    filter: opacity(.65) saturate(50%) brightness(70%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.shape-grid-item-image:hover{
+    filter: opacity(.35) saturate(50%) brightness(70%) grayscale(.85);
+}
+
+.card-irregular {
+    -webkit-clip-path: polygon(6% 0, 97% 3%, 98% 100%, 0 94%);
+    clip-path: polygon(6% 0, 97% 3%, 98% 100%, 0 94%);
+    border-radius: 20%;
+    padding:2em;
+    border: 0;
+}
+
+.card-irregular-1 {
+    background-color: $rsts-orange-dark;
+    -webkit-clip-path: polygon(6% 0, 97% 3%, 98% 100%, 0 94%);
+    clip-path: polygon(6% 0, 97% 3%, 98% 100%, 0 94%);
+    border-radius: 20%;
+    padding:2em;
+}
+
+
+//Introduce a bit of variation
+.shape-grid-item:nth-child(2n+1), .card-irregular-2 {
+
+    background-color:$rsts-orange-mid;
+    -webkit-clip-path: polygon(1% 3%, 94% 0, 100% 100%, 3% 98%);
+    clip-path: polygon(1% 3%, 94% 0, 100% 100%, 3% 98%);
+    border-radius: 20%;
+
+    .shape-grid-item-image {
+        -webkit-clip-path: polygon(7% 5%, 91% 5%, 94% 96%, 5% 94%);
+        clip-path: polygon(7% 5%, 91% 5%, 94% 96%, 5% 94%);
+        border-radius: 30%;
+    }
+}
+
+.shape-grid-item:nth-child(3n+2), .card-irregular-3 {
+
+    background-color:$rsts-blue-mid;
+    -webkit-clip-path: polygon(0 0, 100% 2%, 100% 93%, 0 96%);
+    clip-path: polygon(0 0, 100% 2%, 100% 93%, 0 96%);
+    border-radius: 10%;
+
+    .shape-grid-item-image {
+        -webkit-clip-path: polygon(3% 3%, 100% 0, 95% 100%, 2% 92%);
+        clip-path: polygon(3% 3%, 100% 0, 95% 100%, 2% 92%);
+        border-radius: 15%;
+    }
+
+}
+
+.shape-grid-item:nth-child(5n+3), .card-irregular-4 {
+
+  background-color:$rsts-teal-light;
+  -webkit-clip-path: polygon(1% 3%, 94% 0, 100% 100%, 3% 98%);
+  clip-path: polygon(1% 3%, 94% 0, 100% 100%, 3% 98%);
+  border-radius: 25%;
+
+  .shape-grid-item-image {
+      -webkit-clip-path: polygon(3% 3%, 100% 0, 95% 100%, 2% 92%);
+      clip-path: polygon(3% 3%, 100% 0, 95% 100%, 2% 92%);
+      border-radius: 30%;
+    }
+
+}
+
+.shape-grid-item:nth-child(7n+5), .card-irregular-5 {
+
+    background-color:$rsts-teal-mid;
+    -webkit-clip-path: polygon(0 0, 98% 2%, 100% 99%, 2% 96%);
+    clip-path: polygon(0 0, 98% 2%, 100% 99%, 2% 96%);
+    border-radius: 22%;
+
+    .shape-grid-item-image {
+        -webkit-clip-path: polygon(6% 0, 100% 3%, 95% 96%, 2% 96%, 4% 38%);
+        clip-path: polygon(6% 0, 100% 3%, 95% 96%, 2% 96%, 4% 38%);
+        border-radius: 25%;
+    }
+
+}
+.shape-grid-item:nth-child(11n+7), .card-irregular-6 {
+
+    background-color:$rsts-yellow;
+    -webkit-clip-path: polygon(3% 4%, 98% 0%, 93% 96%, 0% 100%);
+    clip-path: polygon(3% 4%, 98% 0%, 93% 96%, 0% 100%);
+    border-radius: 10%;
+
+    .shape-grid-item-image {
+        -webkit-clip-path: polygon(3% 9%, 95% 5%, 93% 96%, 3% 88%);
+        clip-path: polygon(3% 9%, 95% 5%, 93% 96%, 3% 88%);
+        border-radius: 20%;
+    }
+}
+
+//Contents styling - e.g. blog
+.shape-grid-item-title {
+  font-size: 1.1em;
+  font-weight: 400;
+  width:80%;
+  position:absolute;
+  top: 25px;
+  left: 35px;
+  z-index:100;
+  //margin-bottom: 3em;
+  color: white;
+  //padding-bottom: 3em;
+
+  a {
+      font-weight: 600;
+      color: white;
+  }
+}
+
+.card-irregular-txt {
+    font-size: 0.9em;
+    text-align: center;
+    padding:2em;
+}
+
+//Border irregular shapes
+.card-border-irregular {
+    border: 7px solid $rsts-grey-mid;
+    border-radius: 10% 20% 15% 13%;
+    padding: 1em;
+    transform: rotate(0deg);
+
+    a {
+        font-size: 1.15em;
+    }
+}
+
+.bi-1 {
+    border: 5px solid $rsts-blue-light;
+
+    a {
+        color: $rsts-blue-dark;
+    }
+}
+.bi-2 {
+    border: 6px solid $rsts-orange-mid;
+    transform: rotate(-1deg);
+    border-radius: 19% 17% 12% 10%;
+
+    a {
+        color: $rsts-orange-dark;
+    }
+}
+.bi-3 {
+    border: 7px solid $rsts-teal-mid;
+    transform: rotate(1deg);
+    border-radius: 12% 7% 12% 8%;
+
+    a {
+        color: $rsts-teal-dark;
+    }
+}
+
+.bi-4 {
+    border: 6px solid $rsts-yellow;
+    transform: rotate(2deg);
+    border-radius: 6% 17% 20% 4%;
+
+    a {
+        color: $rsts-orange-mid;
+    }
+}
+
+.bi-5 {
+    border: 5px solid $rsts-blue-mid;
+    transform: rotate(1deg);
+    border-radius: 12% 7% 12% 8%;
+
+    a {
+        color: $rsts-blue-dark;
+    }
+}
+
+.bi-6 {
+    border: 6px solid $rsts-teal-light;
+    transform: rotate(1deg);
+    border-radius: 12% 7% 12% 8%;
+
+    a {
+        color: $rsts-teal-dark;
+    }
+}

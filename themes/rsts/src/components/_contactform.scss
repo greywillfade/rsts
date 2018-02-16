@@ -1,0 +1,43 @@
+//Contact form styling
+$contact-us-section-padding: 0;
+$contact-us-section-bg: white;
+
+.contact-us-section {
+    background: white;
+
+    .contact-us-section-left {
+        border-bottom: 3px solid #eee;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+
+        @media screen and (min-width: 40em) {
+            border-bottom: 0;
+            border-right: 3px solid #eee;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            padding-right:3em;
+            margin-right:2em;
+        }
+    }
+}
+
+.contact-us-form {
+    input[type=text],
+    input[type=email],
+    textarea {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.contact-us-form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input[type=submit] {
+        border-radius: 3000px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+}

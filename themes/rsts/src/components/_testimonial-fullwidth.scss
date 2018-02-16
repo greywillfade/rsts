@@ -1,0 +1,88 @@
+$full-width-testimonial-quote-color: #e36a58;
+$full-width-testimonial-vertical-padding: 2rem;
+
+.full-width-testimonial-manor {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.1)
+    ),
+    url("/img/bg/manor2.jpg");
+    background-position: bottom center;
+    filter: opacity(.75);
+}
+
+.full-width-testimonial-patch {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("/img/content/blog/l/20160408-patchwork.jpg");
+    background-position: bottom center;
+    filter: opacity(.75);
+}
+
+.full-width-testimonial-icon {
+    .quote-path {
+        fill:none;
+        stroke: $full-width-testimonial-quote-color;
+        stroke-width:2.5192;
+        stroke-miterlimit:10;
+    }
+}
+
+.full-width-testimonial-content,
+.full-width-testimonial-icon {
+    text-align: center;
+}
+
+.full-width-testimonial-section {
+    padding-top: $full-width-testimonial-vertical-padding;
+
+    .full-width-testimonial-text {
+        font-weight: 300;
+        color: #ffffff;
+        padding-left: 30px;
+        padding-right: 30px;
+        // Adjust margin-top for line spacing
+        margin-top: -5px;
+    }
+
+    .full-width-testimonial-source {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding-bottom: 0;
+        margin-bottom: 0.2em;
+    }
+
+    .full-width-testimonial-source-context {
+        display: block;
+        font-size: 0.9em;
+        font-weight: 500;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+    .slick-slider {
+        margin-bottom: 0px;
+    }
+
+    @media screen and (min-width: 64em) {
+        width: 80%;
+        margin:auto;
+    }
+}
+
+.full-width-testimonial-text,
+.full-width-testimonial-content,
+.full-width-testimonial-source,
+.full-width-testimonial-icon {
+    padding-bottom: $full-width-testimonial-vertical-padding;
+}
+
+.full-width-testimonial-content {
+    width: 100%;
+}

@@ -1,0 +1,75 @@
+<footer class="marketing-site-footer">
+
+    {{ if or (eq .Kind "home") (eq .Params.Newsletter "true") }}
+        <div class="row medium-unstack breathe-t breathe-b">
+            <div class="medium-7 columns">
+                <h4 class="marketing-site-footer-name">Join the mailing list</h4>
+                <p>If you’d like to be kept updated about availability, work we’ve been doing, conferences we’re speaking at, or other things that may be of interest please sign up to our mailing list.</p>
+                <p>We promise that we’ll never share your details with anyone else, and you can leave at any time.</p>
+                <div class="indicates-required"><span class="asterisk">*</span> required information</div>
+            </div>
+
+            <div class="medium-5 columns">
+                {{ partial "thirdparty/mailchimp" . }}
+            </div>
+        </div>
+    {{ else }}
+        <div class="row medium-unstack breathe-t breathe-b">
+            <div class="small-12 columns">
+                {{ if eq .Title "How we can help" }}
+                    <h4 class="marketing-site-footer-name">Sound interesting?</h4>
+                    <p>Everyone’s different, and we’d be happy to work with you to hear a bit more about your situation before coming back with some suggestions of how we could work together.  However if you’d like some ideas of what we’ve done with other people please have a look at the <a href="/work/">Past Work</a> page.</p>
+                    <p>To provide you with availability and costs, let us know a bit more about your needs. <a href="/contact/">Get in touch</a></p>
+                {{ else if or (eq .Title "Blog") (eq .Section "blog") }}
+                    <h4 class="marketing-site-footer-name">Want to be kept up to date?</h4>
+                    <p>If you're looking for more reading material, you can keep up to date with all of our blog posts using our <a href="/blog/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>.</p>
+                    <p>If anything you've read today has sparked your interest and you'd like to know more, or if there are particular subjects that you'd like to hear about, please <a href="/contact/">let us know</a>!</p>
+                {{ else }}
+                    <h4 class="marketing-site-footer-name">Any questions?</h4>
+                    <p>We'd love to continue the conversation if you'd like to talk about this or anything else. Please <a href="/contact/">get in touch</a> and let us know what you'd like to chat about!</p>
+                {{ end }}
+            </div>
+        </div>
+    {{ end }}
+
+
+    <!--Bottom general bar -->
+    <div class="marketing-site-footer-bottom">
+        <div class="row column">
+            <p>Records Sound the Same Ltd is a company registered in England and Wales. Company No. 08942289. VAT No. 217992084.</p>
+            <p>hello@recordssoundthesame.com | <a href="https://twitter.com/RecordsSoundTS">@RecordsSoundTS</a> | <a href="/contact/">Contact us</a> | <a href="/contact/">Join the newsletter</a></p>
+            <hr />
+        </div>
+
+        <div class="row large-unstack align-middle">
+            <div class="column">
+                <p>&copy; Records Sound the Same Ltd {{ now.Year }}</p>
+            </div>
+            <div class="column">
+                <ul class="menu marketing-site-footer-bottom-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/services/">How we can help</a></li>
+                <li><a href="/work/">Past work</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div><!--Unfixed -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script src="/js/index.js"></script>
+
+<script>
+  $(document).foundation();
+</script>
+
+</body>
+</html>

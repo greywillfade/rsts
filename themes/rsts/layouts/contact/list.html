@@ -1,0 +1,77 @@
+{{ partial "base" . }}
+{{ partial "thirdparty/ga" . }}
+{{ partial "nav" . }}
+
+<div id="waveholder" class="topbar-unfix">
+
+    <div class="intro-banner callout large">
+    <div class="row" style="justify-content: center;">
+        <div class="column small-12 large-9">
+            <h1 style="color:#305A5C;">Get in touch</h1>
+            <p style="font-size:1.7em;">Whether you’d like to discuss a project, have a question you’d need answering, or simply want find out more, please drop us a message.</p>
+            <p style="font-size:1.2em;">Alternatively, if you'd like to stay up to date, you can also join the mailing list.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="bg-tm">
+        <canvas id="canvas" height="100px"></canvas>
+    </div>
+
+    <section>
+        <div class="row breathe-b" style="justify-content: center;">
+        <div class="medium-9 column">
+            <p>Sending a note to introduce yourself is the best way to kick off a project. We can then either arrange a call or video chat, or meet up somewhere.</p>
+            <p>The Records Sound the Same office is in Sudbury in Suffolk, but we’re often out and about around the UK (and further afield) so are happy to come to you.</p>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        {{ partial "thirdparty/gmap" . }}
+    </section>
+
+    <section class="contact-us-section">
+        <div class="row medium-unstack breathe-b breathe-t">
+            <div class="column small-12 medium-6 contact-us-section-left">
+                <h2 class="contact-us-header">Say hello</h2>
+                <form class="contact-us-form" method="POST" action="http://formspree.io/hello@recordssoundthesame.com">
+                    <label>Your name
+                        <input type="text" name="contact-name" placeholder="Name">
+                    </label>
+                    <label>Which company do you work for?
+                        <input type="text" name="contact-company" placeholder="Company">
+                    </label>
+                    <label>Your email address
+                    <input type="email" name="contact-email" placeholder="Email">
+                    </label>
+                    <label>What would you like to talk about?
+                    <textarea name="contact-msg" rows="10" placeholder="A really great project"></textarea>
+                    </label>
+
+                    <div class="contact-us-form-actions">
+                        <input type="submit" class="button rounded" value="Send" />
+                    </div>
+                </form>
+            </div>
+            <div class="column small-12 medium-6">
+                <h2>Address</h2>
+                <p>If you need our address for your records (or to send us cake), it's:</p>
+                <p><strong>Records Sound the Same Ltd</strong><br />
+                The Lait Buildings<br />
+                Northern Road<br />
+                Sudbury<br />
+                Suffolk<br />
+                CO10 2ZB</p>
+                <p>Visits by appointment only, please.</p>
+
+                <h2>Email</h2>
+                <p>hello [ @ ] recordssoundthesame.com</p>
+
+                <h2>Social</h2>
+                <p>We're <a href="https://twitter.com/RecordsSoundTS">@RecordsSoundTS</a> on Twitter, or say hello to Sally using <a href="https://twitter.com/sallylait">@sallylait</a></p>
+            </div>
+        </div>
+    </section>
+
+{{ partial "footer" . }}

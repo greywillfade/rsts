@@ -1,0 +1,80 @@
+{{ partial "base" . }}
+{{ partial "thirdparty/ga" . }}
+{{ partial "nav" . }}
+
+<div id="waveholder" class="topbar-unfix">
+
+    <div class="intro-banner callout large">
+    <div class="row">
+        <div class="column small-12">
+            <h1 style="color:#305A5C;">404 page not found</h1>
+            <p style="font-size:1.7em;">Sorry about this! It's probably us, not you.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="bg-tm">
+        <canvas id="canvas" height="100px"></canvas>
+    </div>
+
+    <section>
+        <div class="row column breathe-b breathe-t">
+            <p>Looks like something isn't quite where you were expecting it to be. Oops.</p>
+            <p>If you'd like to drop us an email using hello [ @ ] recordssoundthesame.com or through <a href="/contact/">our contact page</a> we'd be happy to help you find what you were looking for.</p>
+        </div>
+    </section>
+
+    <footer class="marketing-site-footer">
+        <div class="row medium-unstack breathe-t breathe-b">
+            <div class="medium-7 columns">
+                <h4 class="marketing-site-footer-name">Join the mailing list</h4>
+                <p>If you’d like to be kept updated about availability, work we’ve been doing, conferences we’re speaking at, or other things that may be of interest please sign up to our mailing list.</p>
+                <p>We promise that we’ll never share your details with anyone else, and you can leave at any time.</p>
+                <div class="indicates-required"><span class="asterisk">*</span> required information</div>
+            </div>
+
+            <div class="medium-5 columns">
+                {{ partial "thirdparty/mailchimp" . }}
+            </div>
+        </div>
+
+        <!--Bottom general bar -->
+        <div class="marketing-site-footer-bottom">
+            <div class="row column">
+                <p>Records Sound the Same Ltd is a company registered in England and Wales. Company No. 08942289. VAT No. 217992084.</p>
+                <p>hello@recordssoundthesame.com | <a href="https://twitter.com/RecordsSoundTS">@RecordsSoundTS</a> | <a href="/contact/">Contact us</a> | <a href="/contact/">Join the newsletter</a></p>
+                <hr />
+            </div>
+
+            <div class="row large-unstack align-middle">
+                <div class="column">
+                    <p>&copy; Records Sound the Same Ltd 2017</p>
+                </div>
+                <div class="column">
+                    <ul class="menu marketing-site-footer-bottom-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/services/">How we can help</a></li>
+                    <li><a href="/work/">Past work</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div><!--Unfixed -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="/js/index.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+
+    </body>
+    </html>

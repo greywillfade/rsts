@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Join in on Records Sound the Same</title>
+    <link>http://recordssoundthesame.com/join/</link>
+    <description>Recent content in Join in on Records Sound the Same</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <managingEditor>hello@recordssoundthesame.com (Records Sound the Same)</managingEditor>
+    <webMaster>hello@recordssoundthesame.com (Records Sound the Same)</webMaster>
+    <copyright>All content is copyright Records Sound the Same Ltd</copyright>
+    
+	<atom:link href="http://recordssoundthesame.com/join/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

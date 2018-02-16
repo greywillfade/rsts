@@ -1,0 +1,230 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'rstsvars';
+//@import 'motion-ui';
+
+
+@include foundation-global-styles;
+//@include foundation-grid;
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+//@include foundation-slider;
+//@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+//@include motion-ui-transitions;
+//@include motion-ui-animations;
+
+@import 'components/top-bar-responsive';
+@import 'components/marketing-footer';
+@import 'components/marketing-site-content-section';
+@import 'components/marketing-threeup';
+@import 'components/irregular-shapes';
+@import 'components/contactform';
+@import 'components/content-header';
+@import 'components/testimonial-fullwidth';
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+}
+
+.lede {
+    font-size: 1.35em;
+
+    @include breakpoint(medium) {
+        font-size: 1.5em;
+    }
+}
+
+.twitter-tweet-rendered {
+    margin-top: 3em!important;
+    margin-bottom: 3em!important;
+}
+
+.breathe-b {
+    padding-bottom:2em;
+}
+
+.breathe-t {
+    padding-top:2em;
+}
+
+figcaption {
+    color: $rsts-grey-mid;
+    margin-bottom: 2em;
+    margin-top: 0.7em;
+}
+
+
+.soften-shape {
+    border-top-left-radius: 7%;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 12%;
+    border-bottom-right-radius: 8%;
+    //transform: rotate(1deg);
+}
+.image-soften-shape {
+    border-top-left-radius: 17%;
+    border-top-right-radius: 35%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 20%;
+    transform: rotate(-3deg);
+}
+
+.image-soften-shape-alt {
+    border-top-left-radius: 27%;
+    border-top-right-radius: 32%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 25%;
+    transform: rotate(1deg);
+}
+
+.bg-slope-btm {
+    width:100%;
+    height: 100px;
+    -webkit-clip-path: polygon(0 50%, 0 0, 100% 0);
+    clip-path: polygon(0 50%, 0 0, 100% 0);
+    content: '';
+    margin-top: -1px;
+}
+
+.bg-slope-top {
+    width:100%;
+    height: 100px;
+    -webkit-clip-path: polygon(0 50%, 0% 100%, 100% 100%);
+    clip-path: polygon(0 50%, 0% 100%, 100% 100%);
+    content: '';
+    margin-bottom: -11px;
+}
+
+//Marketing big side images clipping
+.clip-l-slope {
+    -webkit-clip-path: polygon(2% 2%, 81% 19%, 97% 91%, 3% 97%);
+    clip-path: polygon(2% 2%, 81% 19%, 97% 91%, 3% 97%);
+}
+
+.clip-l-slope-bdr {
+    background-color:$rsts-orange-mid;
+    -webkit-clip-path: polygon(0 0, 81% 14%, 100% 97%, 0% 100%);
+    clip-path: polygon(0 0, 81% 14%, 100% 97%, 0% 100%);
+}
+
+.clip-r-slope {
+    -webkit-clip-path: polygon(20% 5%, 98% 12%, 98% 98%, 0% 89%);
+    clip-path: polygon(20% 5%, 98% 12%, 98% 98%, 0% 89%);
+}
+
+.clip-r-slope-bdr {
+    background-color:$rsts-blue-mid;
+    -webkit-clip-path: polygon(17% 0%, 100% 16%, 100% 100%, 0% 93%);
+    clip-path: polygon(17% 0%, 100% 16%, 100% 100%, 0% 93%);
+}
+
+//In-page image clipping
+.image-full-clip {
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 80%, 0% 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 80%, 0% 100%);
+}
+
+//Introbanner
+.intro-banner {
+    text-align: left;
+    background-color: $rsts-teal-mid;
+    border: none;
+    margin-bottom: 0;
+    color: white;
+}
+
+.intro-banner h1 {
+    letter-spacing: -0.05em;
+}
+
+.intro-banner-hl {
+    color:#f5d793;
+    font-weight:600;
+}
+
+.marketing-icon {
+    max-width:80px;
+    margin-bottom:1em;
+}
+
+@include breakpoint(medium) {
+    .intro-banner {
+        background-size:contain;
+    }
+}
+
+#canvas {
+  margin-bottom: -0.5em;
+}
+
+//Coloured bgs
+.bg-td {
+    background-color: $rsts-teal-dark;
+    color: white;
+}
+
+.bg-tm {
+    background-color: $rsts-teal-mid;
+    color: white;
+}
+
+.bg-tl {
+    background-color: $rsts-teal-light;
+}
+
+.bg-main {
+    background-color: $rsts-whitebg;
+}
+
+.bg-main-alt {
+    background-color: $rsts-whitebg-alt;
+}
+
+//Text list - e.g. services
+.impact-list-text p {
+    font-weight: 400;
+    font-size: 1.7em;
+    color: $rsts-darkbg;
+    margin-top:1em;
+    margin-bottom: 1em;
+}
