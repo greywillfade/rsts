@@ -3,6 +3,8 @@ title       = "Workshop: An introduction to digital transformation"
 description = "This one-day training workshop has been designed to give organisations a practical introduction to exercises which can help kick-start digital transformation projects, and make change happen."
 servicessub = "A one-day, hands-on digital transformation training course for companies"
 sessiontopics = ["thing 1", "thing 2"]
+type = "services"
+layout = "workshop"
 +++
 
 This one-day training workshop has been designed to give organisations a practical introduction to exercises which can help kick-start digital transformation projects, and make change happen.
@@ -20,7 +22,7 @@ This course is perfect for companies who want to work better with digital techno
 * A business who feels like they've fallen behind in their use of and relationship with technology, and wants help to set a future strategy.
 * A consumer-focused company who's wanting to use technology to better support customers' experiences.
 * A digital agency who wants staff to learn more about transformation to be able to better support clients.
-* Anyone who wants to learn new skills and ways of thinking about digital, to apply to their work environment. 
+* Anyone who wants to learn new skills and ways of thinking about digital, to apply to their work environment.
 
 Attendees don’t need any design or development experience of working with the web - just a willingness to look critically at current situations, to be able to imagine what could be better, and to have the drive to make it happen. We recommend a mix of diverse roles attend - from senior management through to those on the front lines day-to-day.
 

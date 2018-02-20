@@ -1,0 +1,47 @@
+{{ partial "base" . }}
+{{ partial "thirdparty/ga" . }}
+{{ partial "nav" . }}
+
+<div id="waveholder" class="topbar-unfix">
+
+    <div class="intro-banner callout large">
+    <div class="row" style="justify-content: center;">
+        <div class="column small-12 large-9">
+            <h1 style="color:#305A5C;">{{ .Title }}</h1>
+            <p style="font-size:1.7em;">{{ .Params.servicessub }}</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="bg-tm">
+        <canvas id="canvas" height="100px"></canvas>
+    </div>
+
+    <section>
+        <div class="row breathe-b" style="justify-content: center;">
+        <div class="medium-9 column">
+            {{ .Content }}
+        </div>
+        </div>
+    </section>
+
+
+    <div class="bg-slope-top bg-main-alt"></div>
+    <section class="bg-main-alt breathe-t breathe-b">
+        <div class="row align-center">
+            <div class="column small-12">
+                <h2>Arrange a review</h2>
+                <p>If you'd like to discuss booking this workshop for your company, please get in touch using one of the methods on our <a href="/contact">contact</a> page. It's useful if you could let us know:</p>
+                <ul>
+                    <li>Who you and your company are</li>
+                    <li>Where you're based</li>
+                    <li>How many people you would want to attend (we recommend no more than 20 at a time)</li>
+                    <li>If you have a timescale in mind</li>
+                </ul>
+                <p>We'll then be able to get back to you with an indication of costs and a plan.</p>
+                <a class="button large" href="/contact/">Book now</a>
+            </div>
+        </div>
+    </section>
+
+    {{ partial "footer" . }}
