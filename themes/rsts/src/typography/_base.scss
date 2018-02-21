@@ -418,7 +418,6 @@ $abbr-underline: 1px dotted $black !default;
     list-style: none;
   }
 
-
   li::before {
       color: $rsts-orange-dark;
       content: "\2022";
@@ -426,6 +425,10 @@ $abbr-underline: 1px dotted $black !default;
       padding-right: 1.5em;
       position: relative;
       top: 0em;
+  }
+
+  ul li ul li::before {
+      color: $rsts-orange-mid;
   }
 
   // Unordered lists
