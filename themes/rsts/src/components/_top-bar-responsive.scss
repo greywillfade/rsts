@@ -123,6 +123,11 @@
         }
     }
 
+     li::before {
+         content: "";
+         display: none;
+     }
+
     li:last-of-type {
         margin-right: 0;
     }

@@ -412,7 +412,20 @@ $abbr-underline: 1px dotted $black !default;
 
   // List items
   li {
-    font-size: inherit;
+    //font-size: inherit;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    list-style: none;
+  }
+
+
+  li::before {
+      color: $rsts-orange-dark;
+      content: "\2022";
+      font-size: 1em;
+      padding-right: 1.5em;
+      position: relative;
+      top: 0em;
   }
 
   // Unordered lists
