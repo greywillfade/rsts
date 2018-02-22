@@ -8,7 +8,7 @@ layout = "review"
 
 Rather than commit to a full programme of work, an easy first step is to opt for a one-off review. With this in mind, we offer a selection of reviews and audits to help you quickly and affordably kick-start some change.
 
-A review can give you an initial, independent assessment of how things stand, identification of opportunities and areas of improvement, plus practical recommendations for next steps. The aim isn’t just to identify what could be better, but also why it’s important - the aim is for this to provide you with some insight into industry best-practices and information that you may not have known about.
+A review can give you an initial, independent assessment of how things stand, identification of opportunities and areas of improvement, plus practical recommendations for next steps. The aim isn’t just to identify what could be better, but also why it’s important - you'll also get some insight into industry best-practices and information that you may not have known about.
 
 You can take the recommendations away and act on them internally, or we can use them to build a more extensive set of activities together, based on the findings and what you’d like to prioritise.
 
