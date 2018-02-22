@@ -1,0 +1,40 @@
+{{ partial "base" . }}
+{{ partial "thirdparty/ga" . }}
+{{ partial "nav" . }}
+
+<div id="waveholder" class="topbar-unfix">
+
+    <div class="intro-banner callout large">
+    <div class="row" style="justify-content: center;">
+        <div class="column small-12 large-9">
+            <h1 style="color:#305A5C;">{{ .Title }}</h1>
+            <p style="font-size:1.7em;">{{ .Params.servicessub }}</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="bg-tm">
+        <canvas id="canvas" height="100px"></canvas>
+    </div>
+
+    <section>
+        <div class="row breathe-b" style="justify-content: center;">
+        <div class="medium-9 column">
+            {{ .Content }}
+        </div>
+        </div>
+    </section>
+
+
+    <div class="bg-slope-top bg-main-alt"></div>
+    <section class="bg-main-alt breathe-t breathe-b">
+        <div class="row align-center">
+            <div class="column small-12">
+                <h2>Arrange a chat</h2>
+                <p>It’s best to talk through what you’re thinking. Let us know who you are and what you have in mind through the <a href="/contact">contact</a> page, and we can arrange a call to discuss everything in more detail.</p>
+                <a class="button large" href="/contact/">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    {{ partial "footer" . }}

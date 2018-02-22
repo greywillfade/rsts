@@ -1,0 +1,17 @@
+.card-imagetext {
+    background-color: white;
+    margin: 1em auto 2em;
+    padding: 1em;
+    border-radius: 1em;
+
+
+    img {
+        max-width: 170px;
+        border-radius: 50%;
+        margin: 1em auto;
+    }
+}
+
+.card-imagetext > div:first-of-type {
+    text-align: center;
+}

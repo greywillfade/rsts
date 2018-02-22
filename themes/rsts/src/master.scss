@@ -61,6 +61,7 @@
 @import 'components/content-header';
 @import 'components/testimonial-fullwidth';
 @import 'components/pricing-table';
+@import 'components/imagetextcard';
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Karla', sans-serif;
@@ -228,4 +229,11 @@ figcaption {
     color: $rsts-darkbg;
     margin-top:1em;
     margin-bottom: 1em;
+}
+
+.hr-content {
+    border-width: 0 0 5px;
+    border-style: solid;
+    border-color: white;
+    margin: 3em auto;
 }
