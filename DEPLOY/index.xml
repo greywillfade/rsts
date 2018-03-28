@@ -9,10 +9,20 @@
     <managingEditor>hello@recordssoundthesame.com (Records Sound the Same)</managingEditor>
     <webMaster>hello@recordssoundthesame.com (Records Sound the Same)</webMaster>
     <copyright>All content is copyright Records Sound the Same Ltd</copyright>
-    <lastBuildDate>Wed, 14 Feb 2018 15:04:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Mar 2018 13:50:00 +0000</lastBuildDate>
     
 	<atom:link href="http://recordssoundthesame.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Prioritising</title>
+      <link>http://recordssoundthesame.com/blog/2018/03/28/prioritising/</link>
+      <pubDate>Wed, 28 Mar 2018 13:50:00 +0000</pubDate>
+      <author>hello@recordssoundthesame.com (Records Sound the Same)</author>
+      <guid>http://recordssoundthesame.com/blog/2018/03/28/prioritising/</guid>
+      <description>Welcome back to the third post in the 12 months of digital transformation set! Today we’re going to be looking at something that happens every single day, sometimes formally and sometimes unconsciously: prioritisation.
+Without even realising it, you prioritise and re-prioritise constantly. By choosing to read this post, you’ve made a decision that it’s worthy of your time over that cup of tea you were going to make, or that email you’ve been putting off writing (thanks!</description>
+    </item>
     
     <item>
       <title>Audits as a strategic tool</title>

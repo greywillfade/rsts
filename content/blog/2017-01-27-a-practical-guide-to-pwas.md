@@ -56,7 +56,7 @@ Another thing of note which some of those example sites offer is the ability to 
 
 One important point here &#8212; in keeping with our earlier discussion of the pace of change, at present if you add to your home screen it does just that &#8212; adds an icon to the screen. It’s basically a glorified bookmark, and the icon won’t show up in your main collection of applications… yet. That’s all changing, and soon your web apps will be able to sit happily alongside their native friends.
 
-{{< tweet 824430047012401152 >}}
+<!-- tweet removed - tweet 824430047012401152 -->
 
 As another example of changes rolling out, I was contacted by [Alex Russell][8] (a software engineer at Google working on Chrome, Blink and the broader web platform) after originally publishing these thoughts. The documentation on [Google’s Web App Install Banner][6] page currently states that the banner will be triggered if the site _“Is visited at least twice, with at least five minutes between visits”_, plus meets other technical criteria. Alex very helpfully provided the following updates to changes in how PWAs are being handled in Google Chrome:
 
