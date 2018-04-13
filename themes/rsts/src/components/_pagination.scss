@@ -193,3 +193,7 @@ $pagination-arrows: true !default;
     }
   }
 }
+
+.pagination-next::before, .pagination-previous::before { 
+    content: "";
+}
