@@ -9,10 +9,20 @@
     <managingEditor>hello@recordssoundthesame.com (Records Sound the Same)</managingEditor>
     <webMaster>hello@recordssoundthesame.com (Records Sound the Same)</webMaster>
     <copyright>All content is copyright Records Sound the Same Ltd</copyright>
-    <lastBuildDate>Fri, 13 Apr 2018 12:30:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 02 May 2018 13:00:00 +0100</lastBuildDate>
     
 	<atom:link href="http://recordssoundthesame.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>New research - call for help!</title>
+      <link>http://recordssoundthesame.com/blog/2018/05/02/research-call-for-help/</link>
+      <pubDate>Wed, 02 May 2018 13:00:00 +0100</pubDate>
+      <author>hello@recordssoundthesame.com (Records Sound the Same)</author>
+      <guid>http://recordssoundthesame.com/blog/2018/05/02/research-call-for-help/</guid>
+      <description>I’m planning some research around the biggest challenges that businesses are facing with digital and the web, and am looking for some people who’d be happy to speak to me about this.
+You might be in a more day-to-day digitally-focused role, or a more strategic one where there’s less direct contact but digital is important to your roadmap. You may have in-house teams, or outsource. Your business may be a small start-up, a massive international company, or you may work agency-side.</description>
+    </item>
     
     <item>
       <title>Mapping a technology ecosystem</title>
