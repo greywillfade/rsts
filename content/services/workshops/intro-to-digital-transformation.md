@@ -5,6 +5,7 @@ servicessub = "A one-day, hands-on digital transformation training course for co
 sessiontopics = ["thing 1", "thing 2"]
 type = "services"
 layout = "workshop"
+longcontent = true
 +++
 
 This one-day training workshop has been designed to give organisations a practical introduction to exercises which can help kick-start digital transformation projects, and make change happen.

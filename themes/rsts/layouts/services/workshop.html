@@ -18,21 +18,42 @@
     </div>
 
     <section>
-        <div class="row breathe-b" style="justify-content: center;">
+        <div class="row" style="justify-content: center;">
         <div class="medium-9 column">
             {{ .Content }}
         </div>
         </div>
     </section>
 
-    <section>
-        <img src="/img/layout/postitspens.jpg" class="image-full-clip" />
-    </section>
+    {{if eq .Params.longcontent true}}
+        <section>
+            <img src="/img/layout/postitspens.jpg" class="image-full-clip" />
+        </section>
+
+        <section>
+            <div class="row breathe-t breathe-b" style="justify-content: center;">
+            <div class="medium-9 column">
+                {{ partial "workshops/digitaltrans/topicsobj.html" . }}
+            </div>
+            </div>
+        </section>
+    {{ end }}
 
     <section>
-        <div class="row breathe-t breathe-b" style="justify-content: center;">
+        <div class="row breathe-b" style="justify-content: center;">
         <div class="medium-9 column">
-            {{ partial "workshops/digitaltrans/topicsobj.html" . }}
+
+            <h2>Who’s leading the workshop?</h2>
+
+            <div class="row" class="breathe-t">
+                <div class="small-12 medium-4 columns breathe-t text-center">
+                        <img src="/img/people/sally.jpg" alt="Sally Lait" style="border-radius:50%;" />
+                </div>
+                <div class="small-12 medium-8 columns breathe-t">
+                    <p><b>Sally Lait</b> is a senior digital transformation consultant based in the UK. A former Head of Technology agency-side, her company Records Sound the Same now helps organisations like the Manor Racing F1 team, RNLI, Inghams, and Ski Total to evolve their relationship with the web and digital technologies. The merging of user-led thinking, innovation, and solid technical principles is what drives her work - helping people to understand opportunities for change, their choices, and how to make these happen. Sally speaks at events around the world, documents Japanese train stamps and manholes, is an Open Data Institute Associate, and tweets as <a href="http://twitter.com/sallylait">@sallylait</a>.</p>
+                </div>
+            </div>
+
         </div>
         </div>
     </section>
