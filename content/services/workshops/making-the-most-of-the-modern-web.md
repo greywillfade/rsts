@@ -1,21 +1,28 @@
 +++
 title       = "Workshop: Making the most of the modern web"
-description = "In this half-day training workshop we’ll cover some of the exciting possibilities that the modern web brings us, and look at how these can bring benefits to both customers and your business itself."
-servicessub = "A half-day training course for senior digital leaders who want to understand more about how the modern web can support their business and customers."
+description = "In this training workshop we’ll cover some of the exciting possibilities that the modern web brings us, and look at how these can bring benefits to both customers and your business itself."
+servicessub = "A half- or full-day training course for senior digital leaders who want to understand more about how the modern web can support their business and customers."
 sessiontopics = ["PWAs", "performance", "offline"]
 type = "services"
 layout = "workshop"
 longcontent = false
 +++
 
-In this half-day training workshop we’ll cover some of the exciting possibilities that the modern web brings us, and look at how these can bring benefits to both customers and your business itself.
+In this training workshop we’ll cover some of the exciting possibilities that the modern web brings us, and look at how these can bring benefits to both customers and your business itself.
 
-You may have heard about “**progressive web apps**” (PWAs) but not really be sure what they are, or why some of the conversations around them (involving words like *‘service workers’*, *’performance’*, *‘offline’*, or *‘progressive enhancement’*) really matter &mdash; this will help to change that, and give you the confidence you need to understand where they can fit into your strategy.
+You may have heard about “**progressive web apps**” (PWAs) but not really be sure what they are, or why some of the conversations around them (involving words like *‘service workers’*, *’performance’*, *‘offline’*, or *‘progressive enhancement’*) really matter &mdash; this will help to change that, and give you the confidence you need to understand where they, and other modern web options, can fit into your strategy.
+
+
+## Format
+
+The material will be delivered via a set of lessons followed with interactive activities.  No special equipment is needed.
+
+This course can be adapted to suit a half- or full-day session. With a half-day session I'll work with you to define the areas you're most interested in, rather than trying to cover everything.
 
 
 ## What we’ll cover
 
-Areas that we’ll be looking at include:
+Depending on the length, we may look at some or all of the following:
 
 * **What do we think of when we think of websites, and apps?**
 * **Introducing offline into your user experiences**
@@ -25,6 +32,10 @@ Areas that we’ll be looking at include:
 * **Extending the ways that you can interact with people**
 	* getting on people’s home screens
 	* notifications
+    * Bluetooth
+    * VR
+    * payments
+    * animations
 	* most importantly, how to get the browser bar to match your brand, like all the cool kids do
 * **Common use cases for new technologies, and how these apply to your situation**
 * **Why this all matters, and the benefits that these can bring**
@@ -34,11 +45,7 @@ Whilst the setting is a hands-on workshop, this *won’t* be coding-focused, and
 
 The goal is that you’ll leave excited about the capabilities available to you right now, and with a clear direction of what it means to introduce some into your business’ work, without fretting that you need to be a JavaScript expert first.
 
-## Format
 
-The material will be delivered via a set of lessons followed with interactive activities.  No special equipment is needed.
-
-Total time: 3 hours.
 
 ## Learning objectives
 
