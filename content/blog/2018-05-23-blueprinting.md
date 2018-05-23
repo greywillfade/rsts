@@ -2,7 +2,7 @@
 author = "Sally"
 categories = ["General"]
 class = "bi-3"
-date = "2018-05-21T12:00:00+00:00"
+date = "2018-05-23T11:00:00+00:00"
 description = "May’s ’12 months of digital transformation’ post is about a staple in the toolbox of change: blueprinting. This month we’re going to look at what it is, what it can help with, and how you can do it effectively."
 headerimg = "/img/content/blog/l/20180523-hdr.jpg"
 tags = ["digital transformation", "blueprinting", "service design"]
