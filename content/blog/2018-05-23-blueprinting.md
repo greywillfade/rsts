@@ -119,7 +119,7 @@ Under each step’s one-line description, include the following. I can recommend
 * Questions, or parked areas to explore further
 * Ideas for opportunities and improvements
 
-<img src="/img/content/blog/l/20180523-diag4.png" alt="Adding all of the additional information cards">
+<img src="/img/content/blog/l/20180523-diag4v2.png" alt="Adding all of the additional information cards">
 
 That's a lot of cards! For quicker run throughs you may wish to keep it a bit more streamlined, focusing just on the factual bits and pain points. You'll find that conversations naturally come out of this activity, so ensure that you have a good facilitator who can keep everything on track.
 
