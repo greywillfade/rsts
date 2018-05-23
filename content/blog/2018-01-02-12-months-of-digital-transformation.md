@@ -19,10 +19,10 @@ So, how will it work? Each post will be self-contained, and you’ll be able to 
 
 The post schedule will be as follows:
 
-* **January:** Choosing new technology
-* **February:** Audits as a strategic tool
-* **March:** Prioritisation
-* **April:** Finding enhancements
+* **January:** [Choosing new technology](/blog/2018/01/17/choosing-new-technology/)
+* **February:** [Audits as a strategic tool](/blog/2018/02/14/audits-as-a-strategic-tool/)
+* **March:** [Prioritising](/blog/2018/03/28/prioritising/)
+* **April:** [Finding enhancements](/blog/2018/05/16/finding-enhancements/)
 * **May:** Blueprinting
 * **June:** Understanding root causes
 * **July:** Spotlight on culture (values, diversity, inclusivity, and ethics)

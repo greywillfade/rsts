@@ -32,7 +32,7 @@ Depending on the length, we may look at some or all of the following:
 * **Extending the ways that you can interact with people**
 	* getting on people’s home screens
 	* notifications
-    * Bluetooth
+    * bluetooth
     * VR
     * payments
     * animations
