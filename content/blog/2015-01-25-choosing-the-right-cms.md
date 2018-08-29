@@ -108,7 +108,7 @@ Unsurprisingly, many of the responses were geared around the idea that if other
 
 {{< tweet 554695376763363330 >}}
 
-{{< tweet 554698912926556160 >}}
+<!--554698912926556160 removed -->
 
 {{< tweet 554700426935681024 >}}
 
