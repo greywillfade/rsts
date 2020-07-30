@@ -1,6 +1,6 @@
 <footer class="marketing-site-footer">
 
-    {{ if or (eq .Kind "home") (eq .Params.Newsletter "true") }}
+    {{ if (eq .Params.Newsletter "true") }}
         <div class="row medium-unstack breathe-t breathe-b">
             <div class="medium-7 columns">
                 <h4 class="marketing-site-footer-name">Join the mailing list</h4>
@@ -13,6 +13,7 @@
                 {{ partial "thirdparty/mailchimp" . }}
             </div>
         </div>
+    {{ else if eq .Kind "home" }}
     {{ else }}
         <div class="row medium-unstack breathe-t breathe-b">
             <div class="small-12 columns">
@@ -36,8 +37,8 @@
     <!--Bottom general bar -->
     <div class="marketing-site-footer-bottom">
         <div class="row column">
-            <p>Records Sound the Same Ltd is a company registered in England and Wales. Company No. 08942289. VAT No. 217992084.</p>
-            <p>hello@recordssoundthesame.com | <a href="https://twitter.com/RecordsSoundTS">@RecordsSoundTS</a> | <a href="/contact/">Contact us</a> | <a href="/contact/">Join the newsletter</a></p>
+            <p>Records Sound the Same Ltd is a company registered in England and Wales. Company No. 08942289.</p>
+            <p>hello@recordssoundthesame.com | <a href="https://twitter.com/RecordsSoundTS">@RecordsSoundTS</a>
             <hr />
         </div>
 
@@ -47,10 +48,6 @@
             </div>
             <div class="column">
                 <ul class="menu marketing-site-footer-bottom-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/services/">How we can help</a></li>
-                <li><a href="/work/">Past work</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/contact/">Contact</a></li>
                 </ul>

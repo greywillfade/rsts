@@ -51,16 +51,7 @@
         <div id="topbar-responsive" class="topbar-responsive-links" role="navigation">
             <div class="top-bar-right">
                 <ul class="vertical large-horizontal menu" data-responsive-menu="large-dropdown">
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="/services/">How we can help</a>
-                        <ul>
-                            <li><a href="/services/project/">Digital transformation projects</a></li>
-                            <li><a href="/services/consultancy/">Consultancy</a></li>
-                            <li><a href="/services/reviews/">Reviews and audits</a></li>
-                            <li><a href="/services/workshops/">Workshops</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/work/">Past work</a></li>
+                    
                     <li><a href="/blog/">Blog</a></li>
                     <li>
                         <a href="/contact/"><button type="button" class="button hollow topbar-responsive-button">Contact</button></a>
@@ -103,82 +94,38 @@
     <section>
     <div class="row align-center breathe-t breathe-b">
     <div class="column small-12 medium-9">
-        
-
-<p class="lede">Earlier this year I wrote about the thought process that had gone into the company rebrand, which came about with the help of the lovely <a href="http://katherinecory.com/">Katherine Cory</a>. After that followed the main slog &mdash; translating the direction into something suitable for the web, and getting it built.</p>
-
+        <!-- raw HTML omitted -->
 <p>Any ground-up rewrite of a digital project can be a challenge, and whilst this iteration of the site is still a work in progress I wanted to document some of the key considerations from the journey so far.</p>
-
 <h2 id="choosing-a-content-management-approach">Choosing a content management approach</h2>
-
 <p>The choice of technology and site build actually got underway long before Katherine had finished. A lot of the copy was already done, plus the site structure had been defined, so the choice of technology was all about finding something to match.</p>
-
 <p>The previous website content had already been ported once before - from a bespoke platform originally to WordPress. Over the years, the custom WordPress theme had done more and more of the heavy lifting, with almost all of the content for site pages being written directly into the source files (as opposed to using WordPress functionality). Posts were usually written in Markdown in a dedicated writing app and then pasted into the post editor, plus comments were turned off, meaning that there was really very little reason to be using WordPress at all. Unlike most people looking for a content management system, what <em>wasn&rsquo;t</em> needed was a full-blown CMS and editing interfaces. Instead, it was more a system and framework for creating content that was going to be more appropriate.</p>
-
 <p>I&rsquo;m well-versed in the complexities of helping others to choose technologies, and felt that it was worth doing the same kind of due diligence for content managing the company site. I wanted to make sure that the technology wasn&rsquo;t imposing too many overheads, and would be suitable for a good while to come.</p>
-
-<p>My starting point was that I already suspected that a <strong>static site generator</strong> would probably be the best fit. The benefits of static sites have appealed to me for a long time, and if you&rsquo;re interested in learning more about the topic in general please <a href="/contact">get in touch</a> (I&rsquo;m happy to answer individual questions or write more on this). <a href="https://www.hawksworx.com/">Phil Hawksworth</a> has also written about and given some excellent talks in this area. In this instance, I didn&rsquo;t need any kind of GUI (as I was editing code and writing posts directly), and I was interested in the speed, security and simplicity that plain old HTML affords, whilst also having the benefits that generators bring above hand-coding every page.</p>
-
+<p>My starting point was that I already suspected that a <strong>static site generator</strong> would probably be the best fit. The benefits of static sites have appealed to me for a long time, and if you&rsquo;re interested in learning more about the topic in general please <!-- raw HTML omitted -->get in touch<!-- raw HTML omitted --> (I&rsquo;m happy to answer individual questions or write more on this). <a href="https://www.hawksworx.com/">Phil Hawksworth</a> has also written about and given some excellent talks in this area. In this instance, I didn&rsquo;t need any kind of GUI (as I was editing code and writing posts directly), and I was interested in the speed, security and simplicity that plain old HTML affords, whilst also having the benefits that generators bring above hand-coding every page.</p>
 <p>After researching the latest options and creating a couple of prototypes to get a feel for them (always a good option to use something directly rather than trusting the marketing!), I settled on <a href="gohugo.io">Hugo</a>. Hugo so far feels a fantastic match for my needs. It&rsquo;s blazingly fast to compile everything, very logical, and I very rapidly set up a workflow that met exactly what I was after. More crucially, unlike many other options it didn&rsquo;t require a really context environment setup or a large number of dependencies. I was so impressed and have enjoyed using it so much that I&rsquo;m now in the process of switching my personal site over too.</p>
-
 <p>Much of the content was to be new, but migration of posts did take a little bit of time to tidy up. The WordPress export didn&rsquo;t do a great job with things like embedded tweets or videos, but thankfully most other aspects converted quite well.</p>
-
 <p>The other foundation laid was to set up some basic automation, which took the form of <a href="http://gulpjs.com/">Gulp</a>. If you&rsquo;re not familiar, as they put it:</p>
-
 <blockquote>
 <p>gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.</p>
 </blockquote>
-
 <p>It&rsquo;s all about setting foundations, so that the actual building process can be more efficient, and should involve less human error from doing repetitive tasks manually.</p>
-
 <p>At this point it was on to thinking about what the site should do, and how it should look.</p>
-
 <h2 id="designing-the-site">Designing the site</h2>
-
 <p>As Katherine had created plenty of assets, including the ability to flex the brand based on the context of usage, there was plenty to play with. We&rsquo;d discussed the idea of the site being colour and pattern led rather than overly image-based, and there was also the matter of the concept itself – the deliberate irregularity of the logo and changing of context. This, I felt lent itself really well to playing with some less traditional shapes, plus a bit of animation.</p>
-
 <p>The design started with a lot of sketches. Whilst the main elements were known, the challenge came when actually attempting to flesh out the details. After what felt like an age of false starts, a breakthrough came in the form of a &lsquo;6-up 1-up&rsquo; exercise held with a UX friend over a Hangout, which really helped to solidify the approach.</p>
-
-<figure class="text-center">
-<img src="/img/content/blog/l/20170621-sketchy.jpg" alt="Assorted sketches" width="500" />
-<figcaption>Assorted sketches, including 6-up 1-up output</figcaption>
-</figure>
-
+<!-- raw HTML omitted -->
 <p>Following the call there were certain elements that I wanted to explore further, creating some prototypes of individual elements. These weren&rsquo;t all used in the final site, but lent weight to the reality of design concepts, and allowed things like different imagery and text lengths to be easily checked against.</p>
-
-<figure class="text-center">
-<img src="/img/content/blog/l/20170621-proto.jpg" alt="Prototype components" width="500" />
-<figcaption>Prototyping elements</figcaption>
-</figure>
-
+<!-- raw HTML omitted -->
 <h2 id="front-end-choices">Front-end choices</h2>
-
 <p>After that it was a matter of turning it into reality, and starting to create templates for different elements within Hugo.</p>
-
-<p>The site uses a <strong>component-led approach</strong>, where each re-usable element was designed and coded in their own right before being combined into pages. These elements are then able to be used across different pages, leading to fewer inconsistencies, code that&rsquo;s easier to test, and less duplication of efforts. Many organisations work this way now, creating front-end style guides and pattern libraries to document the components and how they can be used. If you&rsquo;d like to learn more, Anna Debenham and Brad Frost&rsquo;s <styleguides.io> reference is an excellent place to start.</p>
-
-<figure class="text-center">
-<img src="/img/content/blog/l/20170621-components.jpg" alt="Component sketches" width="500" />
-<figcaption>Thinking about components and variants</figcaption>
-</figure>
-
+<p>The site uses a <strong>component-led approach</strong>, where each re-usable element was designed and coded in their own right before being combined into pages. These elements are then able to be used across different pages, leading to fewer inconsistencies, code that&rsquo;s easier to test, and less duplication of efforts. Many organisations work this way now, creating front-end style guides and pattern libraries to document the components and how they can be used. If you&rsquo;d like to learn more, Anna Debenham and Brad Frost&rsquo;s &lt;styleguides.io&gt; reference is an excellent place to start.</p>
+<!-- raw HTML omitted -->
 <p>Due to wanting a bit of a head start in terms of design assets and a structure to work within, I turned to <a href="http://foundation.zurb.com/">Foundation</a>, which is a responsive front-end framework with many basic elements pre-made. This was both a blessing and a curse, in that it got everything up and running very quickly and helped me to pin down how little aspects should look and work, but came with a <em>lot</em> of overhead in terms of code that wasn&rsquo;t needed. It also made it incredibly tricky to debug exactly why certain things were breaking, as you have to trace through an enormous generalised package.</p>
-
 <p>In general, I don&rsquo;t recommend that clients use frameworks like this for their websites unless there&rsquo;s a good reason to. I use Foundation for quick things like prototyping, but the bloat, loss of control, and opinionated code mean that it&rsquo;s rarely best to use it in production. Many others feel differently though, and my use here shows that there are situations where it may be useful to go against your usual views. Whilst it helped me to get to an initial launch, the CSS and JavaScript behind the site are high on the list of priorities to revisit, in order to make them more performant and easier to maintain.</p>
-
 <p>On top of the Foundation framework I built a number of custom elements in. The desire to feature irregularity and changing shapes led to the concept of the animated wave in the header (which respects <a href="https://support.apple.com/kb/PH25204?locale=en_GB">Reduce Motion</a> settings  if available and activated, for accessibility reasons). It also led me to experiment with the CSS Clip Path property, which hasn&rsquo;t yet been made available for all browsers, but is an example of a nice aesthetic enhancement that people will receive if their browsers are capable of <a href="http://caniuse.com/#feat=css-clip-path">supporting it</a>.</p>
-
-<figure class="text-center">
-<img src="/img/content/blog/l/20170621-irregular.jpg" alt="RSTS homepage" width="500" />
-<figcaption>Embracing irregular shapes</figcaption>
-</figure>
-
+<!-- raw HTML omitted -->
 <h2 id="next-steps">Next steps</h2>
-
 <p>So what else aside from the CSS and JavaScript refactor? Also on the backlog (outside of some known bugs - please do <a href="/contact">let me know</a> if you find any critical issues) are some other enhancements.</p>
-
 <p>I&rsquo;d like to continue the <strong>animation</strong> through to the logo, using some of the other variants that Katherine has put together. I also want to build in <strong>Progressive Web App</strong> capabilities, which would mean that amongst other things you could read this article offline. I wrote more about PWAs <a href="http://recordssoundthesame.com/blog/2017/01/27/a-practical-guide-to-pwas/">here</a> if you&rsquo;re interested. One of the pre-requisites for this is to serve the site over <strong>HTTPS</strong>, which I&rsquo;ve wanted to do for a while. This not only helps with security, but also has other positive side effects (things like Google featuring HTTPS sites more highly in search rankings).</p>
-
 <p>It&rsquo;s never easy to find the time to work on your own projects – whether because of client work or because there&rsquo;s always &lsquo;not enough time&rsquo;. It&rsquo;s been great seeing so many of my clients starting to focus not only on their public-facing offerings but also their internal systems, processes, and tools, and I&rsquo;m so pleased that I was able to take the time to join them, and start creating some new foundations for the future.</p>
 
     </div>
@@ -228,21 +175,17 @@
     
     <div class="marketing-site-footer-bottom">
         <div class="row column">
-            <p>Records Sound the Same Ltd is a company registered in England and Wales. Company No. 08942289. VAT No. 217992084.</p>
-            <p>hello@recordssoundthesame.com | <a href="https://twitter.com/RecordsSoundTS">@RecordsSoundTS</a> | <a href="/contact/">Contact us</a> | <a href="/contact/">Join the newsletter</a></p>
+            <p>Records Sound the Same Ltd is a company registered in England and Wales. Company No. 08942289.</p>
+            <p>hello@recordssoundthesame.com | <a href="https://twitter.com/RecordsSoundTS">@RecordsSoundTS</a>
             <hr />
         </div>
 
         <div class="row large-unstack align-middle">
             <div class="column">
-                <p>&copy; Records Sound the Same Ltd 2018</p>
+                <p>&copy; Records Sound the Same Ltd 2020</p>
             </div>
             <div class="column">
                 <ul class="menu marketing-site-footer-bottom-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/services/">How we can help</a></li>
-                <li><a href="/work/">Past work</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/contact/">Contact</a></li>
                 </ul>
