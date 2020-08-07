@@ -6,6 +6,12 @@ publishDir = "DEPLOY"
 paginate = 12
 copyright = "All content is copyright Records Sound the Same Ltd"
 
+
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.renderer]
+			unsafe = true
+
 [author]
     name = "Records Sound the Same"
     email = "hello@recordssoundthesame.com"
